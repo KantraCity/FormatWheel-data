@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <!-- имя по соглашению FormatWheel.*, так приложение находит расширения -->
+    <AssemblyName>FormatWheel.Data</AssemblyName>
+    <RootNamespace>FormatWheel.Data</RootNamespace>
+    <Version>1.0.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- SDK с nuget.org; для локальной разработки можно заменить на ProjectReference -->
+    <PackageReference Include="FormatWheel.Sdk" Version="1.0.*" />
+    <PackageReference Include="YamlDotNet" Version="16.3.0" />
+    <PackageReference Include="Tomlyn" Version="0.17.0" />
+  </ItemGroup>
+
+</Project>
